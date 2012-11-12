@@ -9,7 +9,7 @@ au FileType php set omnifunc=phpcomplete#CompletePHP
 "------  Visual Options  ------
 set guioptions=egmt         "remove toolbar, scrollbars
 syntax on                   "Enables syntax highlighting
-set nu                      "Enable Line Numbers
+"set nu                      "Enable Line Numbers
 set nowrap                  "Disable word wrap
 "set vb                     "Visual bell instead of beeps
 set noeb vb t_vb=           "Disable bell  
