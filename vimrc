@@ -175,6 +175,6 @@ if filereadable($HOME.'/.vimrc_local')
     source $HOME/.vimrc_local
 endif
 
-if has('mouse')
-  set mouse=a
-endif
+"if has('mouse')
+"  set mouse=a
+"endif
