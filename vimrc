@@ -15,6 +15,7 @@ set nowrap                  "Disable word wrap
 set noeb vb t_vb=           "Disable bell  
 set ruler                   "Displays cursor position on bottom right of screen
 set statusline=%<%f\ %h%m%r%=%{fugitive#statusline()}\ \ %-14.(%l,%c%V%)\ %P
+set nofoldenable
 
 "------  Behavior  ------
 set tabstop=2               "tab = 4 spaces
