@@ -17,8 +17,8 @@ set ruler                   "Displays cursor position on bottom right of screen
 set statusline=%<%f\ %h%m%r%=%{fugitive#statusline()}\ \ %-14.(%l,%c%V%)\ %P
 
 "------  Behavior  ------
-set tabstop=4               "tab = 4 spaces
-set shiftwidth=4            "Indent to four spaces
+set tabstop=2               "tab = 4 spaces
+set shiftwidth=2            "Indent to four spaces
 set hidden                  "Switch between unsaved buffers w/o needing to save, preserves history
 filetype indent on          "Syntax Highlight
 filetype plugin on          "Needed for snipMate
