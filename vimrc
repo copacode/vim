@@ -36,7 +36,7 @@ au BufWritePost *.coffee silent CoffeeMake!
 set incsearch               "Search while typing
 set ignorecase              "Case Insensitive Searching
 set smartcase               "Lowercase = case insensitive, any uppercase = case sensitive
-set hlsearch                "Highlight all search results
+set nohlsearch                "Highlight all search results
 "Following line clears the search highlights when pressing Lb
 nnoremap <leader>b :nohlsearch<CR>
 " http://www.vim.org/scripts/script.php?script_id=2572
@@ -51,7 +51,7 @@ vmap S :s//g<LEFT><LEFT>
 "------  NERDTree Options  ------
 let NERDTreeIgnore=['CVS']
 let NERDTreeChDirMode=2     "setting root dir in NT also sets VIM's cd
-noremap <silent> <Leader>n :NERDTreeToggle<CR>
+noremap <silent> <Leader>n :NERDTreeTabsToggle<CR>
 
 "------  Tagbar Options  ------
 " http://adamyoung.net/Exuberant-Ctags-OS-X
@@ -151,7 +151,7 @@ if has("gui_running")
     set cursorline                  "Highlight background of current line
     autocmd VimEnter * NERDTree     "run nerdtree
     autocmd VimEnter * TagbarOpen
-    colorscheme proton
+    colorscheme desert
 
     " Show tabs and newline characters with ,s
     nmap <Leader>s :set list!<CR>
@@ -161,7 +161,7 @@ if has("gui_running")
     highlight SpecialKey guifg=#4a4a59
 else
     set t_Co=256
-    colorscheme ir_black            "This theme actually works in 256, ir_black doesn't
+    colorscheme desert256
 endif
 
 if has("gui_macvim") "Use Experimental Renderer option must be enabled for transparency
@@ -173,4 +173,8 @@ endif
 
 if filereadable($HOME.'/.vimrc_local')
     source $HOME/.vimrc_local
+endif
+
+if has('mouse')
+  set mouse=a
 endif
