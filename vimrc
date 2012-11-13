@@ -179,3 +179,32 @@ endif
 "if has('mouse')
 "  set mouse=a
 "endif
+
+\" run file with PHP CLI (CTRL-M)
+:autocmd FileType php noremap <C-M> :w!<CR>:!/usr/bin/php %<CR>
+
+\" PHP parser check (CTRL-L)
+:autocmd FileType php noremap <C-L> :!/usr/bin/php -l %<CR>
+
+
+nnoremap <C-j> :resize +5<cr>
+nnoremap <C-k> :resize -5<cr>
+
+map <Leader>; :call BashToggle()<CR>
+
+function! BashToggle()
+  let visible = {}
+  let s:buffname=bufname("bash") 
+  if bufexists(s:buffname)
+    if winbufnr(bufnr(s:buffname)) == -1 
+      execute ":belowright sbuffer " s:buffname
+      :resize 10
+    else
+      execute ":wincmd j"
+      execute ":close"
+    endif
+  else
+    :ConqueTermSplit bash
+    :resize 10
+  endif
+endfunction
