@@ -28,3 +28,6 @@
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
 	url = git@github.com:copacode/snipmate.vim.git
+[submodule "bundle/phpdoc"]
+	path = bundle/phpdoc
+	url = git://github.com/vim-scripts/PDV--phpDocumentor-for-Vim.git
