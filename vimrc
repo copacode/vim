@@ -20,6 +20,7 @@ set nofoldenable
 "------  Behavior  ------
 set tabstop=2               "tab = 4 spaces
 set shiftwidth=2            "Indent to four spaces
+set softtabstop=2            "Indent to four spaces
 set hidden                  "Switch between unsaved buffers w/o needing to save, preserves history
 filetype indent on          "Syntax Highlight
 filetype plugin on          "Needed for snipMate
