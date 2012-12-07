@@ -213,3 +213,23 @@ endfunction
 inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i
 nnoremap <C-P> :call PhpDocSingle()<CR>
 vnoremap <C-P> :call PhpDocRange()<CR> 
+
+let b:phpgetset_getterTemplate = 
+  \" \n" .
+  \" /**\n" .
+  \"  * @return %varnameclean%\n" .
+  \"  */\n" .
+  \" public function %funcname%()\n" .
+  \" {\n" .
+  \"   return $this->%varname%;\n" .
+  \" }"
+
+let b:phpgetset_setterTemplate = 
+  \" \n" .
+  \" /**\n" .
+  \"  * @param $%varnameclean%\n" .
+  \"  */\n" .
+  \" public function %funcname%($%varnameclean%)\n" .
+  \" {\n" .
+  \"   $this->%varname% = $%varnameclean%;\n" .
+  \" }"
