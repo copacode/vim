@@ -34,3 +34,6 @@
 [submodule "bundle/vim-twig"]
 	path = bundle/vim-twig
 	url = git://github.com/beyondwords/vim-twig.git
+[submodule "bundle/phpgetset"]
+	path = bundle/phpgetset
+	url = git://github.com/EvanDotPro/php_getset.vim.git
